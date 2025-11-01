@@ -27,7 +27,7 @@
 	<body>
 		<header style="background-image: url('{% include relative-src.html src=page.background_image_path %}');" {% if page.large_header %}class="main-hero"{% endif %}>
 			<div class="container">
-				<h2><a href="{{ site.baseurl }}/">{{ site.data.company.title }}</a></h2>
+				<h1><a href="{{ site.baseurl }}/">{{ site.data.company.title }}</a></h1>
 				<nav>
 					<ul>
 						{% assign nav_pages = site.html_pages | where: 'show_in_navigation', true | sort: 'navigation_order' %}
