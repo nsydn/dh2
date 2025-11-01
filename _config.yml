@@ -39,8 +39,8 @@ defaults:
       path: ""
     values:
       layout: page
-      background_image_path: /uploads/dunyalogo.jpg
-      image: /uploads/dunyalogo.jpg
+      background_image_path: /uploads/dunyalogo.png
+      image: /uploads/dunyalogo.png
   -
     scope:
       path: ""
