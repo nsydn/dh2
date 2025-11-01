@@ -11,8 +11,15 @@ $mobile-break: 700px;
 @import "cloudcannon";
 
 
-// h1.smaller-h1,
-// h1.smaller-h1 a {
-//   font-size: 1.75rem;
-//   font-weight: 600;
-// }
+ h1 {
+	font-size: 5rem;
+	// font-size: 6.5rem;
+	line-height: 80px;
+	margin: 0 -10px 0 0;
+
+	@media (min-width: $mobile-break) {
+		line-height: 100px;
+		font-size: 6.5rem;
+		// font-size: 8rem;
+	}
+}
