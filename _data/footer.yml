@@ -1,16 +1,16 @@
 - title: Pages
   links:
-    - name: Home
+    - name: Anasayfa
       link: /
-    - name: About
+    - name: Hakkımızda
       link: /about/
-    - name: Services
+    - name: Hizmetler
       link: /services/
-    - name: Contact
+    - name: İletişim
       link: /contact/
     - name: Blog
       link: /blog/
-- title: Social
+- title: Sanal Medya
   links:
     - name: Facebook
       link: http://facebook.com/cloudcannon/
