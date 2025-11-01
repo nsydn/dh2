@@ -1,6 +1,8 @@
 # ----
 # Site
 
+encoding: "utf-8"
+
 title: Justice Template
 url: "https://orchid-heron.cloudvent.net"
 baseurl:
