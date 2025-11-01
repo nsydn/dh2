@@ -6,10 +6,10 @@
       link: /about/
     - name: Hizmetler
       link: /services/
-    - name: İletişim
-      link: /contact/
     - name: Blog
       link: /blog/
+    - name: İletişim
+      link: /contact/
 - title: Sanal Medya
   links:
     - name: Facebook
