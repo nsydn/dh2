@@ -4,15 +4,18 @@ call_to_action: Contact
 background_image_path:
 large_header: true
 testimonials:
-  - message: We use Justice Law in all our endeavours. They offer an unparalleled service when it comes to running a business.
+  - message: "Kuvvet haktadır, hak kuvvette değildir."
     image: "https://placekitten.com/g/60/60?a=.png"
-    name: Joice Carmold
-  - message: Justice Law are the best of the best. Being local, they care about people and have strong ties to the community.
+    name: Bediüzzaman
+  - message: "Adaletin olmadığı yerde ahlaktan bahsedilemez."
     image: "https://placebear.com/60/60?a=.png"
-    name: Peter Rottenburg
-  - message: Justice Law were everything we could have hoped for when buying our first home. Highly recommended to all.
+    name: Michel de Montaigne
+  - message: "Haksızlık yapıp tüm insanlarla birlikte olmaktansa, adaletli davranıp tek başına kalmak daha iyidir."
     image: "https://placebear.com/60/60?a=.png"
-    name: D. and G. Gibbleston
+    name: Gandhi
+  - message: "Adalet mülkün temelidir."
+    image: "https://placebear.com/60/60?a=.png"
+    name: Hz. Ömer (R.A.)
 _options:
   image:
     width: 60
@@ -29,7 +32,8 @@ _options:
 	{% for testimonial in page.testimonials %}
 		<blockquote class="testimonial">
 			<p class="testimonial-message">{{ testimonial.message }}</p>
-			<p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p>
+			<p class="testimonial-author">{{ testimonial.name }}</p>
+      <!-- <p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p> -->
 		</blockquote>
 	{% endfor %}
 </div>
