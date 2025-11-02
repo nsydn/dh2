@@ -5,7 +5,7 @@ background_image_path:
 large_header: true
 testimonials:
   - message: "Kuvvet haktadır, hak kuvvette değildir."
-    image: "https://placekitten.com/g/60/60?a=.png"
+    image: "https://placebear.com/60/60?a=.png"
     name: Bediüzzaman
   - message: "Adaletin olmadığı yerde ahlaktan bahsedilemez."
     image: "https://placebear.com/60/60?a=.png"
@@ -13,9 +13,9 @@ testimonials:
   - message: "Haksızlık yapıp tüm insanlarla birlikte olmaktansa, adaletli davranıp tek başına kalmak daha iyidir."
     image: "https://placebear.com/60/60?a=.png"
     name: Gandhi
-  <!-- - message: "Adalet mülkün temelidir."
+  - message: "Adalet mülkün temelidir."
     image: "https://placebear.com/60/60?a=.png"
-    name: Hz. Ömer (R.A.) -->
+    name: Hz. Ömer (R.A.)
 _options:
   image:
     width: 60
@@ -32,8 +32,7 @@ _options:
 	{% for testimonial in page.testimonials %}
 		<blockquote class="testimonial">
 			<p class="testimonial-message">{{ testimonial.message }}</p>
-			<p class="testimonial-author">{{ testimonial.name }}</p>
-      <!-- <p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p> -->
+      <p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p>
 		</blockquote>
 	{% endfor %}
 </div>
