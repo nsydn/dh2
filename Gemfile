@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem "csv"
+gem "logger"
+
 gem 'jekyll', '~> 4.2.0'
 
 group :jekyll_plugins do
