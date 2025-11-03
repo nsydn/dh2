@@ -1,6 +1,6 @@
 ---
-title: Real Estate Flipping
-date: 2016-11-11 00:00:00
+title: "Mütalaa: İstirahat Raporu Nedeniyle Çalışılmayan Süre İşçinin Ücretinden Kesilebilir mi?"
+date: 2020-12-11 00:00:00
 categories:
   - Property
 author_staff_member: john-doe

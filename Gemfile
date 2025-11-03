@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem "csv"
 gem "logger"
+gem "base64"
+gem "bigdecimal"
+gem "tzinfo"
 
 gem 'jekyll', '~> 4.2.0'
 
@@ -14,3 +17,5 @@ group :jekyll_plugins do
 end
 
 gem "webrick", "~> 1.8"
+
+gem "tzinfo-data", "~> 1.2025"
