@@ -3,7 +3,7 @@
 
 encoding: "utf-8"
 
-title: Justice Template
+title: Dünya Hukuk
 url: "https://orchid-heron.cloudvent.net"
 baseurl:
 google_analytics_key:
@@ -12,13 +12,13 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Jekyll template with example content for a law firm.
+description: İş Hukuku ve Arabuluculuk
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Justice Template
+  name: Dünya Hukuk
   links:
     - https://github.com/CloudCannon/justice-jekyll-template
 

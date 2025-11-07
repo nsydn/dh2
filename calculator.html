@@ -1,0 +1,70 @@
+---
+layout: default
+title: Hesaplamalar
+permalink: /calculator/
+show_in_navigation: true
+navigation_order: 5
+---
+
+<h3>Yasal Faiz Hesaplama</h3>
+
+<table id="dateTable">
+  <thead>
+    <tr>
+      <th>Borç Tutarı</th>
+      <th>Yıllık Faiz (%)</th>
+      <th>Gün Sayısı</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- only one default row -->
+    <tr>
+      <td><input type="number" id="principal" placeholder="10000" min="0" step="1000" value="10000"></td>
+      <td><input type="number" id="rate" min="0" step="1" value="24" placeholder="24"></td>
+      <td><input type="number" id="days" min="0" step="1" value="30" placeholder="1"></td>
+    </tr>
+    <tr>
+      <td><button id="calculate">Hesapla</button></td>
+      <td><button id="download-report" style="display:none;">Rapor İndir</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="result"></h4>
+
+<script src="{{ '/assets/js/calculator.js' | relative_url }}"></script>
+
+
+
+  <h3>Toplam Hizmet Süresi Hesaplama</h3>
+
+<table id="dateTable">
+  <thead>
+    <tr>
+        <th>İşveren</th>
+        <th>Başlangıç Tarihi</th>
+        <th>Bitiş Tarihi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td><input type="text" class="employer" placeholder="İşveren"></td>
+        <td><input type="date" class="start-date" id="startDate"></td>
+        <td><input type="date" class="end-date" id="endDate"></td>    
+    </tr>
+    <tr>
+        <td><button id="calculate2">Hesapla</button></td>
+        <td><button id="download-report2" style="display:none;">Rapor İndir</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="result2"></h4>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="{{ '/assets/js/calculator2.js' | relative_url }}"></script>
+
+
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="tr">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +30,6 @@
 				<h1>
 					<a href="{{ site.baseurl }}/">{{ site.data.company.title }}</a>
 				</h1>
-				<!-- <h1><a href="{{ site.baseurl }}/">{{ site.data.company.title }}</a></h1> -->
 				<nav>
 					<ul>
 						{% assign nav_pages = site.html_pages | where: 'show_in_navigation', true | sort: 'navigation_order' %}
@@ -42,8 +41,30 @@
 						{% endfor %}
 					</ul>
 				</nav>
+				<!-- <nav>
+					<ul>
+					  {% assign nav_pages = site.html_pages | where: 'show_in_navigation', true | sort: 'navigation_order' %}
+					  {% for nav_page in nav_pages %}
+						{% unless nav_page.parent %}
+						  <li class="menu-item">
+							<a {% if nav_page.url == page.url %}class="active"{% endif %} href="{{ site.baseurl }}{{ nav_page.url }}">{{ nav_page.title }}</a>
+				  
+							{% assign subpages = site.html_pages | where: "parent", nav_page.title %}
+							{% if subpages.size > 0 %}
+							  <ul class="submenu">
+								{% for subpage in subpages %}
+								  <li><a href="{{ site.baseurl }}{{ subpage.url }}">{{ subpage.title }}</a></li>
+								{% endfor %}
+							  </ul>
+							{% endif %}
+						  </li>
+						{% endunless %}
+					  {% endfor %}
+					</ul>
+				  </nav> -->
 			</div>
 		</header>
+		
 
 		<!-- <section class="site-motto">
 			<p>İş Hukuku alanındaki 20 yıllık çözüm ortağınız.</p>

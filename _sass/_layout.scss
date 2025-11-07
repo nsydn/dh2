@@ -22,22 +22,27 @@ header {
 	background-position: calc(50% - 40px) 175px;
 	height: 420px;
 	box-sizing: border-box;
+	color: #d4a31c;
 
 	.container {
 		text-align: center;
+		color: #d4a31c;
 	}
 
 	@media (min-width: $mobile-break) {
 		background-size: contain;
 		background-position: calc(50% - 300px) calc(100% + 20px);
+		color: #d4a31c;
 
 		&.main-hero {
 			height: 60vh;
 			background-position: calc(50% - 350px) calc(100% + 20px);
+			color: #d4a31c;
 		}
 
 		.container {
 			text-align: right;
+			color: #d4a31c;
 		}
 	}
 
@@ -61,24 +66,29 @@ header,
 footer {
 	a {
 		color: #3A4145;
+		color: #d4a31c;
 
 		&.active {
 			border-bottom: 2px solid;
+			color: #d4a31c;
 		}
 	}
 }
 
 header a.active {
 	border-bottom: 2px solid;
+	color: #d4a31c;
 }
 
 header,
 footer,
 section {
 	padding: 30px 20px;
+	color: #d4a31c;
 
 	@media (min-width: $mobile-break) {
 		padding: 80px 40px;
+		color: #d4a31c;
 	}
 }
 
