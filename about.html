@@ -16,7 +16,7 @@ navigation_order: 1
 	<p>Ekibimizle tanışın:</p>
 </div>
 
-<p class="editor-link"><a href="cloudcannon:collections/_staff_members" class="btn"><strong>&#9998;</strong> Update Staff Members</a></p>
+<p class="editor-link"><a href="cloudcannon:collections/_staff_members" class="btn"><strong>&#9998;</strong> Ekibi Güncelle</a></p>
 
 <ul class="staff-list">
 	{% for member in site.staff_members %}
@@ -28,7 +28,8 @@ navigation_order: 1
 				<ul class="staff-info">
 					<li>{{ member.name }}</li>
 					<li><small>{{ member.credentials }}</small></li>
-					<li><a href="tel:{{ site.data.company.phone }}">{{ site.data.company.phone }}</a>  ext {{ member.phone_extension }}</li>
+					<li><a href="tel:{{ site.data.company.phone }}">{{ site.data.company.phone }}</a></li>
+					<!-- <li><a href="tel:{{ site.data.company.phone }}">{{ site.data.company.phone }}</a>  ext {{ include.member.phone_extension }}</p></li> -->
 				</ul>
 			</div>
 

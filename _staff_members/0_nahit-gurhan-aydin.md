@@ -1,6 +1,6 @@
 ---
 name: Nahit Gürhan Aydın
-image: "//placebear.com/440/440?a=.png"
+image: "/assets/img/avukat.png"
 credentials: Avukat
 # phone_extension: "02"
 ---

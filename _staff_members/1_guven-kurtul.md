@@ -1,7 +1,6 @@
 ---
-name: Nahit Gürhan Aydın
+name: Güven Kurtul
 image: "/assets/img/avukat.png"
-# image: "//placebear.com/440/440?a=.png"
 credentials: Avukat
 # phone_extension: "02"
 ---

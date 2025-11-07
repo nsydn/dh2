@@ -20,7 +20,7 @@ navigation_order: 3
 {% if paginator.total_pages > 1 %}
 	<div class="pagination">
 		{% if paginator.previous_page %}
-			<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn">&larr; Newer</a>
+			<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn">&larr; Daya yeni</a>
 		{% elsif paginator.next_page %}
 			<span></span>
 		{% endif %}
@@ -28,7 +28,7 @@ navigation_order: 3
 		<span>{{ paginator.page }} of {{ paginator.total_pages }}</span>
 
 		{% if paginator.next_page %}
-			<a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn">Older &rarr;</a>
+			<a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn">Daha eski &rarr;</a>
 		{% elsif paginator.previous_page %}
 			<span></span>
 		{% endif %}
