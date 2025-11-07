@@ -1,9 +1,9 @@
 ---
-title: Business Mergers
+title: Kıdem tazminatına nasıl hak kazanılır?
 date: 2016-08-10 00:00:00
 categories:
-  - Business
-author_staff_member: jane-doe
+  - Kıdem Tazminatı
+author_staff_member: nahit-gurhan-aydin
 image: "https://unsplash.it/600/450?image=737&a=.png"
 large_header: false
 ---
