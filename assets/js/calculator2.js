@@ -22,10 +22,32 @@ document.addEventListener("DOMContentLoaded", function () {
   
       const startDate = new Date(start);
       const endDate = new Date(end);
+
+      let years = endDate.getFullYear() - startDate.getFullYear();
+      let months = endDate.getMonth() - startDate.getMonth();
+      let days = endDate.getDate() - startDate.getDate() + 1;
+
+      if (days < 0) {
+        // Get days in previous month
+        const previousMonth = new Date(endDate.getFullYear(), endDate.getMonth(), 0);
+        days += previousMonth.getDate();
+        months--;
+      }
+    
+      // Adjust months if negative
+      if (months < 0) {
+        months += 12;
+        years--;
+      }
+
       const diffTime = endDate - startDate;
-      const diffDays = diffTime / (1000 * 60 * 60 * 24);
+      const diffInDays = diffTime / (1000 * 60 * 60 * 24);
+      const diffYears = Math.floor(diffInDays / 365);
+      const diffMonths = Math.floor((diffInDays-diffYears*365)/30);
+      const diffDays = Math.floor(diffInDays-diffYears*365-diffMonths*30);
   
-      resultEl.textContent = `Toplam Hizmet Süresi: ${diffDays.toFixed(0)} gün`;
+      resultEl.textContent = `Hizmet Süresi: ${years.toFixed(0)} yıl ${months.toFixed(0)} ay ${days.toFixed(0)} gün`;
+    //   resultEl.textContent = `Hizmet Süresi: ${diffYears.toFixed(0)} yıl ${diffMonths.toFixed(0)} ay ${diffDays.toFixed(0)} gün`;
   
       downloadBtn.style.display = "inline-block";
     });
@@ -35,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const employer = document.querySelector(".employer").value;
         const start = document.querySelector(".start-date").value;
         const end = document.querySelector(".end-date").value;
-        const resultText = resultEl.textContent.replace("Toplam Hizmet Süresi: ", "").replace(" gün", "");
+        const resultText = resultEl.textContent.replace("Hizmet Süresi: ", "").replace(" gün", "");
     
         // Create worksheet data
         const data = [
