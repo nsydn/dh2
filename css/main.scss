@@ -16,7 +16,7 @@ h1 {
 	// font-size: 6.5rem;
 	line-height: 80px;
 	margin: 0 -10px 0 0;
-	// color: #d4a31c;
+	color: #d4a31c;
 
 	@media (min-width: $mobile-break) {
 		line-height: 100px;
@@ -25,9 +25,10 @@ h1 {
 		color: #d4a31c;
 	}
 	a {
-		color: #d4a31c;
+		// color: #d4a31c;
 		&:hover {
 			color: #73a9c9;
+			// color: #d4a31c;
 		}
 	}
 }
